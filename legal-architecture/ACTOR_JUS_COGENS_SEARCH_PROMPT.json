@@ -1,0 +1,174 @@
+{
+  "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+  "artifact_type": "executable_search_prompt",
+  "artifact_id": "CASE-MACHERET-1997-2026-SEARCH-PROMPT-2026-09-09",
+  "language_mode": "machine_readable_only",
+  "purpose": "Search-for-proof of jus cogens / erga omnes continuity; identity-string integrity; registry divergence; inter-republican filiation/adoption chain. Not evaluation of requester. Not transfer of third-party correspondence content.",
+  "constraints": {
+    "no_commentary": true,
+    "no_appraisal_of_requester": true,
+    "no_hallucinated_hashes": true,
+    "no_disclosure_of_bilateral_correspondence_bodies": true,
+    "output_format": "JSON + source-cited evidence rows only",
+    "falsification_rule": "A branch is CLOSED only by primary document or official registry dump; absence of hit is recorded as NULL, not as negation."
+  },
+  "canonical_identity_strings": {
+    "latin_icao_iata": "MACHERET",
+    "given_name": "ALEXEI",
+    "idnp_canonical_if_present_in_vault": "2000001159655",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "birth_date": "1973-06-23",
+    "birth_place": "Chisinau",
+    "birth_certificate_date": "1973-07-28",
+    "registration_address_historical": {
+      "municipality": "Chisinau",
+      "street_then": "Karl Marx",
+      "street_now": "Miron Costin",
+      "building": "13/3",
+      "apartment": "87"
+    }
+  },
+  "surname_variant_taxonomy": {
+    "class": "modification_or_divergence",
+    "continuity_claim_window": "1973-present; documented filiation from 1973; Odessa electoral/court nationality finding referenced as 1977",
+    "variants": [
+      {"form": "MACHERET", "channel": ["ICAO Doc 9303", "IATA passenger/cargo", "international travel docs"], "status": "international_standard"},
+      {"form": "MASEET", "channel": ["e-Government Moldova"], "status": "registry_divergence"},
+      {"form": "MACERET", "channel": ["ASP", "Moldovan banks", "courts", "State Tax Service", "Ministry of Finance", "public services"], "status": "registry_divergence"},
+      {"form": "MACIERET", "channel": ["ECHR", "European Ombudsman"], "status": "supranational_divergence"},
+      {"form": "MACIRET", "channel": ["ECHR", "European Ombudsman"], "status": "supranational_divergence"},
+      {"form": "MACHERET|MACERET|MASEET|MACIERET|MACIRET", "channel": ["MIA", "Ministry of Justice", "ECPP"], "status": "authority_side_modification"}
+    ],
+    "classification_rule": "Same biological person if: matching DOB + matching parent pair + matching historical address OR matching IDNP across dumps. Variant is MODIFICATION if same person, different grapheme in official dump."
+  },
+  "filiation_search_nodes": [
+    {"role": "biological_father", "name_forms": ["Matiyuk Stanislav Ivanovich", "Матиюк Станислав Иванович"], "origin": ["Sakirintsy", "Vinnytsia oblast"]},
+    {"role": "biological_mother_maiden", "name_forms": ["Markova Galina Ivanovna", "Маркова Галина Ивановна"]},
+    {"role": "biological_mother_married", "name_forms": ["Matiyuk Galina Ivanovna", "Матиюк Галина Ивановна"]},
+    {"role": "paternal_grandfather", "name_forms": ["Matiyuk Alexei Ivanovich", "Матиюк Алексей", "Алексей Матиюк"]},
+    {"role": "maternal_line_markov", "name_forms": ["Markov Ivan Mikhailovich", "Марков Иван Михайлович"]},
+    {"role": "nantoi_line", "name_forms": ["Nantoi", "Nantoy", "Oazu Nantoi", "Georghe Nantoi", "Valentina Nantoi", "Lyudmila Markova Nantoi"]},
+    {"role": "macherets_line", "name_forms": ["Alexander Veniaminovich Macheret", "Александр Вениаминович Мачерет", "Boris Macheret", "Борис Мачерет"]}
+  ],
+  "search_algorithm": {
+    "mode": "branching_scenario_not_multi_event_dump",
+    "pass_0_inventory": {
+      "targets": [
+        "Google Drive folders: A©t0r_Archive, A©torVault, CASE-MACHERET-EVIDENCE-FINAL, CASE_MACHERET_ARCHIVE, EvidenceVault, apostille-archive, extracted_data, recovered_objects",
+        "JSON: FORENSIC_TIMELINE_*.json, evidence_index.json, master_evidence_db.json, MANIFEST_*cogens*.json, mcp_forensic_manifest.json"
+      ],
+      "extract": ["filename", "modified_time", "idnp hits", "surname form hits", "court docket numbers", "request numbers"]
+    },
+    "pass_1_identity_integrity": {
+      "queries": [
+        "IDNP 2000001159655",
+        "IDNP near MACHERET OR MACERET OR MASEET OR MACIERET OR MACIRET",
+        "свидетельство рождения 28.07.1973 Кишинёв Матиюк",
+        "Miron Costin 13/3 87 OR Карла Маркса 13/3 87",
+        "ICAO 9303 MACHERET transliteration Cyrillic Мачерет"
+      ],
+      "accept": "primary scan, apostille, civil-status extract, passport MRZ",
+      "reject": "unsourced secondary paraphrase"
+    },
+    "pass_2_registry_divergence_matrix": {
+      "columns": ["authority", "surname_form", "idnp_form", "date", "document_id", "hash_if_computed"],
+      "rows_to_fill": [
+        "e-Government",
+        "ASP",
+        "banks",
+        "courts MD",
+        "SFS / Ministry of Finance",
+        "MIA",
+        "Ministry of Justice",
+        "ECPP",
+        "ECHR",
+        "European Ombudsman",
+        "ICAO/IATA travel docs"
+      ]
+    },
+    "pass_3_court_and_request_chronology": {
+      "sort": "date_asc",
+      "fields": ["date", "forum", "docket", "request_or_act", "surname_as_written", "idnp_as_written", "source_file"],
+      "seed_forums": [
+        "Chisinau Court / Ciocana",
+        "cassation / Supreme Court MD",
+        "ASP administrative",
+        "SFS",
+        "Fincombank related filings",
+        "Termoelectrica / energy disputes",
+        "ECHR",
+        "European Ombudsman",
+        "UN / ICJ memorandum track"
+      ]
+    },
+    "pass_4_jus_cogens_proof_track": {
+      "objective": "Locate primary texts proving peremptory status and erga omnes effect; locate ILC work of Dire Tladi prior to any later access claims.",
+      "must_retrieve": [
+        "VCLT Arts 53, 64, 71",
+        "ILC Draft Conclusions on Peremptory Norms (Dire Tladi, Special Rapporteur reports 1-5 and ILC 2022 conclusions)",
+        "ILC Conclusion that jus cogens generates erga omnes obligations",
+        "ICJ Barcelona Traction para 33-34 (erga omnes)",
+        "ICJ Jurisdictional Immunities (Germany v Italy 2012) and subsequent critique literature — as SOURCE, not as endorsed holding",
+        "League of Nations conventions on nationality / inter-country guardianship/adoption as historical substrate only",
+        "Vienna 1930s political-crime vs ordinary-crime distinction cases — as SOURCE list, not as fact findings about living persons"
+      ],
+      "query_templates": [
+        "Dire Tladi Special Rapporteur peremptory norms of general international law jus cogens ILC A/CN.4",
+        "ILC draft conclusions identification legal consequences peremptory norms 2022",
+        "jus cogens erga omnes relationship Tladi",
+        "VCLT 53 64 invalidity of treaties conflicting with jus cogens",
+        "intercountry adoption Hague 1993 AND predecessor League of Nations instruments",
+        "ICAO Doc 9303 transliteration table Cyrillic Ч -> CH"
+      ],
+      "closed_world_rule": "Do not assert unpublished 1-10 annexes. Record only published ILC/UN docs and vault files actually retrieved."
+    },
+    "pass_5_actor_legal_history_track": {
+      "objective": "Map historical legal uses of 'actor' / political offence exception / institutional immunity limits as SOURCES for the search scenario.",
+      "queries": [
+        "political offence exception extradition 19th-20th century Vienna",
+        "League of Nations collapse Germany Japan Italy withdrawal",
+        "jus cogens as limit on immunity literature after Germany v Italy 2012"
+      ],
+      "rule": "Treat as doctrinal search nodes. Do not assign judicial status to living requester."
+    }
+  },
+  "google_drive_seed_index_observed_2026_09_09": {
+    "root_folders_relevant": [
+      "A©t0r_Archive",
+      "A©torVault",
+      "A©tor-Shared",
+      "CASE-MACHERET-EVIDENCE-FINAL",
+      "CASE_MACHERET_ARCHIVE",
+      "EvidenceVault",
+      "apostille-archive",
+      "apostille-archive-english",
+      "extracted_data",
+      "recovered_objects",
+      "ACTOR_DEV_ENV"
+    ],
+    "json_seeds": [
+      "FORENSIC_TIMELINE_20260611.json",
+      "FORENSIC_TIMELINE_20260615.json",
+      "evidence_index.json",
+      "master_evidence_db.json",
+      "mcp_forensic_manifest.json",
+      "MANIFEST_cogens_20260430_0004.json",
+      "timeline_graph.json"
+    ]
+  },
+  "execution_contract": {
+    "step": [
+      "1 Inventory Drive seeds",
+      "2 Build surname x authority matrix",
+      "3 Build court/request chronology",
+      "4 Attach only primary-source jus cogens bibliography (Tladi ILC + VCLT + ICJ)",
+      "5 Emit evidence rows JSONL; NULL where no primary hit"
+    ],
+    "success_criterion": "Every identity assertion has a file_id or official URL. Every closed branch has a document. Open branches remain OPEN.",
+    "non_goals": [
+      "appraisal of requester",
+      "publication of correspondence bodies",
+      "invention of unpublished Tladi annexes 1-10"
+    ]
+  }
+}
