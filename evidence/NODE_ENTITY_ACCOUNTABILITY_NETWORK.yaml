@@ -1,0 +1,85 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Node: NODE_ENTITY_ACCOUNTABILITY_NETWORK
+# Version: 1.0.0
+# Generated: 2026-09-20
+# Purpose: Named identification of state agents responsible for denial of justice and obstruction of rehabilitation after judicially established torture
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: NODE_ENTITY_ACCOUNTABILITY_NETWORK
+type: entity_mapping_node
+version: "1.0.0"
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T14:46:00+03:00"
+status: sealed
+
+parent_nodes:
+  - LINK_NON_REHABILITATION_JUS_COGENS
+  - NODE_LEGAL_BASIS_JUS_COGENS
+  - NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+
+legal_framework:
+  basis: Universal Jurisdiction / Individual Responsibility for Jus Cogens violations
+  instruments:
+    - UDHR Art. 8 (right to effective remedy)
+    - Constitution RM Art. 53
+    - Vienna Convention on the Law of Treaties 1969 Art. 53 (acts conflicting with jus cogens are void)
+    - UN CAT (state obligation to provide rehabilitation and compensation)
+  principle: |
+    Officials who knowingly maintain barriers to the rehabilitation of a victim 
+    of judicially established torture engage individual responsibility under 
+    international law. Their acts are void ab initio under VCLT Art. 53.
+
+entities:
+  - name: "Alexandru Negru"
+    role: "Judge"
+    action: "Formal denial of rehabilitation / Obstruction of effective remedy (UDHR Art. 8)"
+    linked_evidence: "A_Negru_25.04.2023.pdf"
+    sha256: "7fa67dff9a4e79bcdb959a4adc5fb4b68c85c679b9e036be59d81b834e4f9bd0"
+    status: "verified_violation"
+
+  - name: "Viorelia Grigoraș"
+    role: "Judge (Judecătoria Chișinău, sediul Buiucani)"
+    action: "Issuing citations and procedural orders (e.g., citation dated 26.04.2024) maintaining procedural barriers while processing rehabilitation claims"
+    linked_evidence: "CITAȚIE_reabilitare_Grigoras_26.04.2024.pdf"
+    sha256: "3cb1a4d3e553f2ea4180ac6fdfbf9ef1f276d2eb870c093a6c7a194504e2b080"
+    status: "verified_procedural_actor"
+
+  - name: "Tudor Stambol"
+    role: "Judge"
+    action: "Issuing rulings (e.g., 23.12.2025 in case no. 21-40/2021) intentionally confusing review (revizuire, CPC Art. 458) with rehabilitation (CP Art. 112), ignoring the res judicata of torture sentence no. 1-568/98"
+    linked_evidence: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    sha256: "bd1c166eb48689abcd4e1bae58121aa3fed622b8e06842966b5660cd7d37d674"
+    status: "verified_violation"
+
+  - name: "Pastulaci"
+    role: "Judge (Cabinet 403, Judecătoria Chișinău)"
+    action: "Processing rehabilitation applications under CPC RM Arts. 250-251 while enforcing administrative preclusion and blocking full exoneration"
+    linked_evidence: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    sha256: "bd1c166eb48689abcd4e1bae58121aa3fed622b8e06842966b5660cd7d37d674"
+    status: "verified_procedural_actor"
+
+  - name: "Svetlana Cușnova (Coșnova)"
+    role: "Prosecutor (Procuratura Generală)"
+    action: "Refusal to initiate review / rehabilitation proceedings; responses that were subsequently challenged by the petitioner"
+    linked_evidence: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    status: "identified_from_text"
+
+  - name: "Cristina Cheptea"
+    role: "Judge"
+    action: "Issuing ruling rejecting complaint against prosecutor’s inaction (28.06.2019)"
+    linked_evidence: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    status: "identified_from_text"
+
+analytical_note: |
+  The network demonstrates a pattern of institutional coordination that maintains 
+  the non-rehabilitation of a victim of judicially established torture (Sentință 
+  1-568/98 of 13.10.1998). Under the Root of Trust (NODE_LEGAL_BASIS_JUS_COGENS), 
+  all such acts are legally void and engage individual accountability.
+
+ti_ula_status:
+  state: entities_identified
+  next_step: link_to_continuing_consequences
+
+integrity:
+  principle: "Named identification is a prerequisite for universal jurisdiction and individual responsibility for jus cogens violations."
+  eisenstein_wall: true
