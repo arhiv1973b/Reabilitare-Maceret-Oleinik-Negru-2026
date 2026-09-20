@@ -1,0 +1,110 @@
+{
+  "id": "NODE_LEGAL_BASIS_JUS_COGENS",
+  "version": "1.0.0",
+  "type": "legal_root_of_trust",
+  "case": "CASE-MACHERET-1997-2026",
+  "created": "2026-09-20T14:17:00+03:00",
+  "status": "sealed",
+  "description": "Root of Trust – Imperative norms (Jus Cogens) and Erga Omnes obligations derived from the Universal Declaration of Human Rights, the UN Convention against Torture, the Vienna Convention on the Law of Treaties (1969), and the Constitution of the Republic of Moldova. This node excludes regional compromise instruments (ECHR) and establishes the non-derogable legal foundation for the entire evidence graph.",
+
+  "legal_framework": {
+    "primary_basis": "UDHR (Universal Declaration of Human Rights, 1948)",
+    "supporting_instruments": [
+      "UN Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment (CAT, 1984)",
+      "Vienna Convention on the Law of Treaties (1969)",
+      "Constitution of the Republic of Moldova"
+    ],
+    "excluded": ["European Convention on Human Rights (ECHR) – regional compromise instrument"],
+    "principles": [
+      "Jus Cogens (peremptory norms of general international law)",
+      "Erga Omnes (obligations owed to the international community as a whole)",
+      "Restitutio in integrum",
+      "Non-applicability of domestic statutes of limitation or res judicata to jus cogens violations"
+    ]
+  },
+
+  "udhr_core_articles": {
+    "article_3": {
+      "text": "Everyone has the right to life, liberty and security of person.",
+      "role_in_case": "Arbitrary detention of 05.08.1997 and continuing deprivation of liberty status"
+    },
+    "article_5": {
+      "text": "No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
+      "role_in_case": "Judicially established torture of 18.08.1997 (Cabinet 509, Dulce V.G., Sentință 1-568/98)"
+    },
+    "article_8": {
+      "text": "Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law.",
+      "role_in_case": "Systemic denial of effective rehabilitation and remedy"
+    },
+    "article_9": {
+      "text": "No one shall be subjected to arbitrary arrest, detention or exile.",
+      "role_in_case": "Primary t0 – Decizie Ciachir 06.08.1997 (administrative cover for detention)"
+    },
+    "article_17": {
+      "text": "(1) Everyone has the right to own property alone as well as in association with others. (2) No one shall be arbitrarily deprived of his property.",
+      "role_in_case": "ZhSK-39 apt. 64 (Miron Costin 13/3) – restitution claim"
+    }
+  },
+
+  "cat_key_provisions": {
+    "article_1": "Definition of torture",
+    "article_2": "Obligation to prevent torture; no exceptional circumstances may be invoked",
+    "article_4": "Criminalization of torture",
+    "article_12_13_14": "Prompt investigation, right to complain, right to fair compensation and rehabilitation",
+    "role_in_case": "Absolute prohibition and state obligation to provide full rehabilitation and compensation for the 18.08.1997 torture episode"
+  },
+
+  "vienna_convention_1969": {
+    "article_53": {
+      "title": "Treaties conflicting with a peremptory norm of general international law (jus cogens)",
+      "text": "A treaty is void if, at the time of its conclusion, it conflicts with a peremptory norm of general international law. For the purposes of the present Convention, a peremptory norm of general international law is a norm accepted and recognized by the international community of States as a whole as a norm from which no derogation is permitted and which can be modified only by a subsequent norm of general international law having the same character.",
+      "role_in_case": "Any domestic decision, amnesty, limitation period or procedural bar that conflicts with the absolute prohibition of torture or the right to effective remedy is void ab initio"
+    },
+    "article_64": {
+      "title": "Emergence of a new peremptory norm of general international law (jus cogens)",
+      "text": "If a new peremptory norm of general international law emerges, any existing treaty which is in conflict with that norm becomes void and terminates.",
+      "role_in_case": "Reinforces the hierarchical superiority of jus cogens over subsequent national legislation or judicial practice"
+    }
+  },
+
+  "constitution_republic_of_moldova": {
+    "article_4": {
+      "title": "Human Rights and Freedoms",
+      "summary": "Constitutional provisions concerning human rights and freedoms shall be interpreted and applied in accordance with the Universal Declaration of Human Rights and other conventions and treaties to which the Republic of Moldova is a party.",
+      "role_in_case": "Direct constitutional incorporation of UDHR standards"
+    },
+    "article_8": {
+      "title": "Observance of International Law and International Treaties",
+      "summary": "The Republic of Moldova undertakes to observe the Charter of the United Nations and the treaties to which it is a party, and to base its relations with other states on the generally recognized principles and norms of international law.",
+      "role_in_case": "State obligation to respect jus cogens and erga omnes norms"
+    },
+    "article_53": {
+      "title": "Right of the Person Aggrieved by a Public Authority",
+      "summary": "Any person aggrieved in his rights by a public authority through an administrative act or through failure to resolve a claim within the legal term is entitled to obtain recognition of the claimed right, annulment of the act and reparation of the damage.",
+      "role_in_case": "Constitutional right to effective remedy and reparation – directly engaged by non-rehabilitation"
+    }
+  },
+
+  "analytical_vector": {
+    "chain": [
+      "arbitrary_detention (UDHR Art. 9 / t0 1997-08-05)",
+      "torture (UDHR Art. 5 / CAT / 1997-08-18)",
+      "denial_of_effective_remedy (UDHR Art. 8 / Const. Art. 53)",
+      "arbitrary_deprivation_of_property (UDHR Art. 17)",
+      "continuing_consequences + non-rehabilitation",
+      "restitutio_in_integrum (Jus Cogens / Erga Omnes)"
+    ],
+    "effect": "Domestic statutes of limitation, res judicata and procedural formalities cannot extinguish claims arising from violations of peremptory norms."
+  },
+
+  "ti_ula_status": {
+    "isolation": true,
+    "role": "Root of Trust – all subsequent evidence nodes must be compatible with this legal basis",
+    "git_sealed": "pending_this_commit"
+  },
+
+  "integrity": {
+    "principle": "This node constitutes the non-negotiable legal foundation. Any national decision conflicting with the listed jus cogens norms is void under Article 53 of the Vienna Convention 1969 and Article 4 of the Moldovan Constitution.",
+    "eisenstein_wall": true
+  }
+}
