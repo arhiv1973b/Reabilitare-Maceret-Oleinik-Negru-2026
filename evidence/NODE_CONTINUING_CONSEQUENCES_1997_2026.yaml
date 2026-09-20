@@ -1,0 +1,84 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Node: NODE_CONTINUING_CONSEQUENCES_1997_2026
+# Version: v1.1.0
+# Generated: 2026-09-20
+# Legal Foundation: UDHR Arts. 3, 5, 9, 17 | Jus Cogens | Erga Omnes | Restitutio in Integrum
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: NODE_CONTINUING_CONSEQUENCES_1997_2026
+type: evidence_node
+version: "1.1.0"
+parent_nodes:
+  - NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+  - SUBNODE_PROPERTY_RESTITUTION_1977_2026
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T12:57:00+03:00"
+status: sealed
+
+legal_framework:
+  basis: UDHR
+  articles: [3, 5, 9, 17]
+  principles:
+    - Jus Cogens
+    - Erga Omnes
+    - restitutio in integrum
+  vector: detention (1997-08-05) -> non-rehabilitation -> continuing-consequences -> restitution
+
+timeline_anchors:
+  t0_initial_detention: "1997-08-05"
+  t0_decision_date: "1997-08-06"
+  t0_torture_incident: "2003"          # year-level; exact day pending
+  t0_property_deprivation: null        # exact date pending
+  current_reference: "2026-09-20"
+  years_elapsed_approx: 29
+
+detention_anchor:
+  filename: "Искажение Фамилии из Мачкпкт в Макеирет.signed.pdf"
+  sha256: "7fc3be1b8698954b7fca035a092441e76f902448df9437378e64317471ed943c"
+  size_bytes: 1267698
+  location: "workspace:/home/workdir/artifacts/reabilitare/"
+  court: "Judecătoria sectorului Centru, mun. Chișinău"
+  judge: "C.P. Ciachir"
+  qualification: "art. 164 al.1 CCA RM (мелкое хулиганство)"
+  penalty: "90 lei"
+  address_at_time: "str. G. Asachi 49 \"b\" ap. 23"
+  name_distortion: "Maciret (instead of Macheret / Мачерет)"
+  role: "Primary documentary proof of t0 and mechanism of substitution (administrative cover for alleged criminal detention / torture)"
+
+economic_anchors:
+  - filename: "Infodebit_Credit_Report_Alexei_Maceret_26.02.2024.jpg"
+    sha256: "02455b17ecd6956b9adad5f4e5411f7c04b9a3f574b662388d1e43e73da00b5f"
+    address_linked: "Miron Costin, 13/364"
+    role: "Current financial profile linked to ZhSK-39 property address; zero active debts"
+  - filename: "VIA_SCOPE_Credit_Report_26.02.2024.jpg"
+    sha256: "2f48a7e9d990d9fbc64b45686a51a24dc9f421202bbe94b3cf49cae62d1ecb26"
+    role: "Supporting credit history report same date"
+
+damage_model:
+  damnum_emergens:
+    description: "Real damage – lost property (ZhSK-39 apt. 64), direct losses, medical, legal costs"
+    placeholder_value_eur: 75000
+  lucrum_cessans:
+    description: "Lost profits / opportunity cost from inability to use property and professional activity due to non-rehabilitation"
+    annual_placeholder_eur: 12000
+    years_factor: 29
+  moral_torture:
+    description: "Compensation for torture (2003), forced psychiatric measures against key witness, family destruction, stigma"
+    placeholder_value_eur: 75000
+  note: "Values are provisional placeholders pending detailed actuarial / expert quantification. Calculation runs from t0_initial_detention 1997-08-05."
+
+subjects:
+  primary: Alexei Macheret (A©tor) – IDNP 20000001159655
+  related:
+    - Irina Oleinik
+    - Ivan Markov (key witness, deceased 2011-03-06)
+    - Galina Markova (adoptive mother, deceased 2022-03-16)
+
+ti_ula_status:
+  isolation: true
+  master_files_count: 6
+  git_sealed: pending_this_commit
+
+integrity:
+  principle: "One binary master per unique content. All references are SHA-256 pointers or page-refs inside sealed containers."
+  eisenstein_wall: true
