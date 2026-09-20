@@ -1,0 +1,91 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Node: NODE_TORTURE_AND_COVERUP_1997_1998
+# Version: v1.0.0
+# Generated: 2026-09-20
+# Legal Foundation: UDHR Arts. 3, 5, 9 | Jus Cogens (absolute prohibition of torture) | Erga Omnes
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: NODE_TORTURE_AND_COVERUP_1997_1998
+type: evidence_node
+version: "1.0.0"
+parent_nodes:
+  - NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+  - NODE_CONTINUING_CONSEQUENCES_1997_2026
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T13:29:00+03:00"
+status: sealed
+
+legal_framework:
+  basis: UDHR
+  articles: [3, 5, 9]
+  principles:
+    - Jus Cogens (absolute prohibition of torture – non-derogable)
+    - Erga Omnes
+    - non-applicability of statute of limitations / res judicata to torture
+  vector: arbitrary_detention (1997-08-05) -> torture (1997-08-18) -> cover-up / non-rehabilitation -> continuing-consequences
+
+timeline_anchors:
+  t0_initial_detention: "1997-08-05"          # Decizie Ciachir (administrative "hooliganism")
+  t0_torture_incident: "1997-08-18"           # Cabinet 509, Commissariat Centru, str. Bulgară 40
+  sentence_date: "1998-10-13"                 # Sentință 1-568/98
+  apostille_date: "2021-05-18"                # Apostille 7H2Q3790FZEI5
+
+torture_episode:
+  date: "1997-08-18"
+  location: "Cabinet 509, Comisariatul de Poliție sector Centru, str. Bulgară 40, Chișinău"
+  perpetrator: "Dulce Victor Grigore – inspector of judicial police"
+  method: "Victim bound hand and foot behind back, placed face-down on floor; multiple blows with rubber truncheon to various body parts (position described as 'ласточка')"
+  injuries: "Contusions and bruises on shoulders, back, ankles and legs – classified as light bodily injuries"
+  judicial_qualification: "tortură" (torture) under art. 185 alin. (3) CP RM (abuse of power)
+  perpetrator_admission: "Dulce admitted guilt only for the Maceret episode and expressed regret"
+
+differential_treatment:
+  other_victims_17_07_1997:
+    - name: Alekseev M.
+    - name: Cemyrtan S.
+    treatment: "Beaten with automatic rifle butt; administrative protocols drawn; acquitted the next day"
+    note: "No binding, no prolonged torture, no forced self-incrimination"
+  maceret_18_08_1997:
+    treatment: "Bound, face-down, prolonged beating with rubber truncheon aimed at extracting confession"
+    note: "Clear differentiation proving targeted use of torture for self-incrimination"
+
+master_files:
+  - filename: "Дело 1-568 на румынском языке .pdf"
+    sha256: "1859f5640a2fc0f1c7b1f7b19c7c0158f7cc5571882594b099cb473594bfff24"
+    size_bytes: 102533
+    role: "Full Sentință 13.10.1998 + Apostille – primary proof of judicially established torture"
+  - filename: "1-568 от Центра (Конфликтующая копия пользователя Alexei Macheret 2022-02-14 02.12.08 PM).pdf"
+    sha256: "7df72b61c035955172a0609d558c81db1a183101f8401fe63a184e23334fe49d"
+    size_bytes: 1568222
+    role: "Court covering letter + copies of related decisions (2021–2022)"
+  - filename: "13.10.1998 (2).pdf"
+    sha256: "f3d28dc81f45e9c014538ce15b96fb220bbd161447b00a3c55a7f0e40bd93375"
+    size_bytes: 176221
+    role: "Apostille verification page (code 7H2Q3790FZEI5)"
+  - filename: "Архив апостиля — русская версия.signed.pdf"
+    sha256: "1d422c724eae65ccb416d1cd4c7b92d677f05f3b8db2296d54eeee2e7a8d727b"
+    size_bytes: 471302
+    role: "Apostille Archive description – 97 records, purpose under Hague Convention"
+
+apostille:
+  code: "7H2Q3790FZEI5"
+  security_code: "2013073926618"
+  date: "2021-05-18"
+  signer: "Valeriu Frimu – Chief of Apostille and Legalization Department"
+  authority: "Agenția Resurse Informaționale Juridice"
+  significance: "Transforms the 1998 domestic judgment into an internationally authenticated public document under the Hague Apostille Convention"
+
+cover_up_elements:
+  - "Physical absence / claimed destruction of root case file materials"
+  - "Administrative 'hooliganism' decision (Ciachir 06.08.1997) used as cover for subsequent criminal detention and torture"
+  - "Name distortion (Maciret) hindering later identification and rehabilitation"
+  - "Incomplete rehabilitation proceedings that never fully acknowledged the torture episode"
+
+ti_ula_status:
+  isolation: true
+  master_files_count: 4
+  git_sealed: pending_this_commit
+
+integrity:
+  principle: "One binary master per unique content. SHA-256 anchors + Hague Apostille create dual-layer authenticity (domestic + international)."
+  eisenstein_wall: true

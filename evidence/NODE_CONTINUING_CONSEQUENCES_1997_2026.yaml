@@ -1,18 +1,20 @@
 # CASE-MACHERET-1997-2026
 # TI-ULA Node: NODE_CONTINUING_CONSEQUENCES_1997_2026
-# Version: v1.1.0
+# Version: v1.2.0
 # Generated: 2026-09-20
 # Legal Foundation: UDHR Arts. 3, 5, 9, 17 | Jus Cogens | Erga Omnes | Restitutio in Integrum
 # A©TOR_KEY="# [⚖ A©tor Declaration]"
 
 id: NODE_CONTINUING_CONSEQUENCES_1997_2026
 type: evidence_node
-version: "1.1.0"
+version: "1.2.0"
 parent_nodes:
   - NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
   - SUBNODE_PROPERTY_RESTITUTION_1977_2026
+  - NODE_TORTURE_AND_COVERUP_1997_1998
 case: CASE-MACHERET-1997-2026
 created: "2026-09-20T12:57:00+03:00"
+updated: "2026-09-20T13:29:00+03:00"
 status: sealed
 
 legal_framework:
@@ -22,12 +24,12 @@ legal_framework:
     - Jus Cogens
     - Erga Omnes
     - restitutio in integrum
-  vector: detention (1997-08-05) -> non-rehabilitation -> continuing-consequences -> restitution
+  vector: detention (1997-08-05) -> torture (1997-08-18) -> non-rehabilitation -> continuing-consequences -> restitution
 
 timeline_anchors:
   t0_initial_detention: "1997-08-05"
   t0_decision_date: "1997-08-06"
-  t0_torture_incident: "2003"          # year-level; exact day pending
+  t0_torture_incident: "1997-08-18"           # Cabinet 509 – Dulce / Sentință 1-568/98
   t0_property_deprivation: null        # exact date pending
   current_reference: "2026-09-20"
   years_elapsed_approx: 29
@@ -63,7 +65,7 @@ damage_model:
     annual_placeholder_eur: 12000
     years_factor: 29
   moral_torture:
-    description: "Compensation for torture (2003), forced psychiatric measures against key witness, family destruction, stigma"
+    description: "Compensation for torture (1997-08-18), forced psychiatric measures against key witness, family destruction, stigma"
     placeholder_value_eur: 75000
   note: "Values are provisional placeholders pending detailed actuarial / expert quantification. Calculation runs from t0_initial_detention 1997-08-05."
 
@@ -77,7 +79,7 @@ subjects:
 ti_ula_status:
   isolation: true
   master_files_count: 6
-  git_sealed: pending_this_commit
+  git_sealed: true
 
 integrity:
   principle: "One binary master per unique content. All references are SHA-256 pointers or page-refs inside sealed containers."
