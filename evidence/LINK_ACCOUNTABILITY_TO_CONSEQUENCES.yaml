@@ -1,0 +1,70 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Causation Link: LINK_ACCOUNTABILITY_TO_CONSEQUENCES
+# Version: 1.0.0
+# Generated: 2026-09-20
+# Purpose: Establish legal causation between denial-of-justice entities and continuing financial / moral damage
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: LINK_ACCOUNTABILITY_TO_CONSEQUENCES
+type: causation_link
+version: "1.0.0"
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T14:49:00+03:00"
+status: sealed
+
+source_node: NODE_ENTITY_ACCOUNTABILITY_NETWORK
+target_node: NODE_FINANCIAL_MODEL_1997_2026
+
+parent_nodes:
+  - NODE_ENTITY_ACCOUNTABILITY_NETWORK
+  - NODE_FINANCIAL_MODEL_1997_2026
+  - NODE_CONTINUING_CONSEQUENCES_1997_2026
+  - NODE_LEGAL_BASIS_JUS_COGENS
+
+legal_framework:
+  basis: 
+    - Draft Articles on Responsibility of States for Internationally Wrongful Acts (ARSIWA)
+    - UDHR Art. 8 (right to effective remedy)
+    - Vienna Convention on the Law of Treaties 1969 Art. 53
+    - UN CAT (obligation of rehabilitation and compensation)
+  mechanism: perpetuation_of_harm_through_denial_of_justice
+  principle: |
+    When state agents, through acts that conflict with peremptory norms, 
+    prevent the rehabilitation of a victim of judicially established torture, 
+    they become the direct generators of continuing consequences. 
+    Causation is established between the denial of justice and the 
+    uninterrupted accumulation of Damnum Emergens, Lucrum Cessans and Moral Damage.
+
+causation_vectors:
+  - entity_group: "Judges (Alexandru Negru, Tudor Stambol and related procedural actors)"
+    action: "Intentional blockage of the rehabilitation mechanism and dismissal / circumvention of primary torture evidence (Sentință 1-568/98 of 13.10.1998)"
+    effect: "Maintained the victim's criminalized / non-rehabilitated status, directly causing the uninterrupted accumulation of Lucrum Cessans (professional and entrepreneurial blockade, including 20% stake in FIRMA COMEX SRL) and Moral Damage arising from the unresolved jus cogens violation."
+    linked_entities:
+      - Alexandru Negru
+      - Tudor Stambol
+      - Pastulaci
+      - Viorelia Grigoraș
+
+  - entity_group: "Prosecutorial actors (Svetlana Cușnova and hierarchical superiors)"
+    action: "Refusal to initiate or support effective review and rehabilitation proceedings"
+    effect: "Reinforced the institutional barrier to remedy, contributing to the continuation of the wrongful situation."
+
+  - entity_group: "State of Moldova"
+    action: "Failure to provide effective remedy, to correct acts of its judicial and prosecutorial agents, and to fulfil erga omnes obligations arising from the absolute prohibition of torture"
+    effect: "Full State Liability under ARSIWA for the total provisional claim of 1,098,500 EUR + ongoing monthly accruals of Lucrum Cessans and continuing moral harm until full restitutio in integrum is achieved."
+
+closed_loop:
+  sequence:
+    - "Torture (18.08.1997) – judicially established"
+    - "Denial of Justice / Non-Rehabilitation (Negru, Stambol et al.)"
+    - "Continuing Consequences (status of non-rehabilitation maintained)"
+    - "Financial & Moral Damage (NODE_FINANCIAL_MODEL_1997_2026)"
+  legal_result: "Causation chain complete. Individual and State responsibility engaged."
+
+ti_ula_status:
+  state: causation_loop_closed
+  next_step: initiate_historical_layer_or_export_dossier
+
+integrity:
+  principle: "This link renders the financial claim a direct legal consequence of the named agents’ void acts. No domestic procedural bar can sever the causal chain."
+  eisenstein_wall: true
