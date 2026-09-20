@@ -1,0 +1,76 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Subnode: SUBNODE_PROPERTY_RESTITUTION_1977_2026
+# Generated: 2026-09-20
+# Legal Foundation: UDHR Art. 17 | Restitutio in Integrum | Jus Cogens | Erga Omnes
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: SUBNODE_PROPERTY_RESTITUTION_1977_2026
+type: evidence_subnode
+parent_node: NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T12:19:00+03:00"
+status: pointer_based
+
+legal_framework:
+  basis: UDHR
+  articles: [17]
+  mechanism: restitutio in integrum
+  vector: confiscation/theft -> non-rehabilitation -> continuing-consequences -> restitution
+
+subjects:
+  claimant: Alexei Macheret (A©tor)
+  idnp: "2000001159655"
+  family_line:
+    - name: Galina Markova (née Matiuk / Matyuk)
+      role: Adoptive Mother
+      status: deceased (16.03.2022)
+    - name: Ivan Markov
+      role: Head of Household (ZhSK-39), Key Witness
+      status: deceased (06.03.2011)
+      note: Forced psychiatric detention (PKB); eliminated as key witness
+    - name: Polina Bascova / Baskova
+      role: Family Member
+      status: deceased (14.06.2000)
+
+master_container:
+  filename: Biography of the Criminal Judicial Rehabilitation of Alexei (A©tor).подписан.pdf
+  sha256: 4f30ae4d57a838143e91897c75ddb9206bf078716dee529a9a3481ed00db63ce
+  size_bytes: 10648490
+  location: workspace:/home/workdir/artifacts/reabilitare/
+  source: user_upload_2026-09-20
+  note: Canonical master-container. All page_refs below point into this single hashed binary. No physical extraction of pages.
+
+evidence_pointers:
+  - doc: Adoption Decision (1977, Odessa) – Матюк Алексей → Мачерет Алексей Артурович
+    page_ref: 17
+    role: Foundation of legal status and succession rights
+  - doc: Birth Certificate Alexei Arturovich Macheret
+    page_ref: 18
+    role: Identity and IDNP lineage confirmation
+  - doc: CERTIFICAT DE DECES Galina Markova (16.03.2022)
+    page_ref: 19
+    role: Termination of maternal rights / succession trigger
+  - doc: Birth Certificate Galina Ivanovna Markova
+    page_ref: 20
+    role: Kinship link
+  - doc: CERTIFICAT DE DECES Polina Bascova (14.06.2000)
+    page_ref: 21
+    role: Demise of family member
+  - doc: CERTIFICAT DE DECES Ivan Markov (06.03.2011)
+    page_ref: 22
+    role: Demise of household head / key witness
+  - doc: EXTRAS DE ARHIVĂ ZhSK-39 apt. 64 (decision 13.10.1987) + Apostille
+    page_ref: 23-26
+    role: Establishment of property rights (family of 3: he, wife + grandson)
+  - doc: Public Services Agency response on 1989 Soviet Passport (XVII-BM 540509)
+    page_ref: 27
+    role: Confirmation of permanent residence and unique IDNP
+
+ti_ula_status:
+  isolation: pointer_based (embedded in hashed container)
+  duplicates_policy: Any separate scans of the same documents found later on Drive will be added as alternative source hashes only; master remains the Biography container.
+  eisenstein_wall: true
+
+integrity:
+  parent_sha256: 4f30ae4d57a838143e91897c75ddb9206bf078716dee529a9a3481ed00db63ce
+  principle: One binary master per unique content. Logical page-refs preserve integrity without fragmentation.
