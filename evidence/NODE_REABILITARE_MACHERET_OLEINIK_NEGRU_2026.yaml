@@ -1,0 +1,94 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Node: REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+# Generated: 2026-09-20
+# Legal Foundation: UDHR Arts. 3, 5, 9, 17 | Jus Cogens | Erga Omnes | Restitutio in Integrum
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+node_id: REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T11:55:00+03:00"
+status: master_isolated
+vector: non-rehabilitation → continuing-consequences → restitution
+
+subjects:
+  - name: Alexei Macheret (A©tor)
+    role: primary_victim / petitioner
+    idnp: "2000001159655"
+  - name: Irina Oleinik / Oleinic
+    role: related_petitioner
+    idnp: "0971908038829"
+  - name: Alexandru Negru
+    role: judge_reporter / alleged_violator
+    note: "Conscious substitution and violation of UDHR norms; national-law bias in criminal procedure"
+  - name: Ivan Markov
+    role: key_witness / forced_PKB_victim
+    note: "Eliminated as key witness who saw more of the overall picture"
+  - name: Galina Markov (née Matiuk / Matyuk)
+    role: adoptive_mother / family_member
+    death: "2022-03-16"
+  - name: Polina Bascova / Baskova
+    role: family_member
+    death: "2000-06-14"
+  - name: Denis Băbălău
+    role: current_judge_reporter
+
+udhr_violations:
+  - article: 9
+    description: "Arbitrary arrest, detention; systemic procedural denial"
+  - article: 17
+    description: "Arbitrary deprivation of property; incomplete restoration"
+  - article: 5
+    description: "Torture / inhuman treatment (linked continuum)"
+  - article: 3
+    description: "Right to life, liberty, security (core continuum)"
+
+master_files:
+  - filename: "Biography of the Criminal Judicial Rehabilitation of Alexei (A©tor).подписан.pdf"
+    sha256: "4f30ae4d57a838143e91897c75ddb9206bf078716dee529a9a3481ed00db63ce"
+    size_bytes: 10648490
+    location: "workspace:/home/workdir/artifacts/reabilitare/"
+    source: "user_upload_2026-09-20"
+    metadata_note: "Digitally signed 2025-12-30 MoldSign; bilingual EN/RO + family/property claims"
+    role: "core_narrative_and_property_claim"
+
+  - filename: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    sha256: "bd1c166eb48689abcd4e1bae58121aa3fed622b8e06842966b5660cd7d37d674"
+    size_bytes: 4413380
+    location: "workspace:/home/workdir/artifacts/reabilitare/"
+    drive_file_id: "18AIn5qT6t3unWf-VqfICSulwm3Gij0jA"
+    drive_link: "https://drive.google.com/file/d/18AIn5qT6t3unWf-VqfICSulwm3Gij0jA/view"
+    role: "rehabilitation_applications"
+
+  - filename: "CITAȚIE_reabilitare_Grigoras_26.04.2024.pdf"
+    sha256: "3cb1a4d3e553f2ea4180ac6fdfbf9ef1f276d2eb870c093a6c7a194504e2b080"
+    size_bytes: 150110
+    location: "workspace:/home/workdir/artifacts/reabilitare/"
+    drive_file_id: "1vYmHCPzFGtZoCxX-JwFublOtlCy0-HNT"
+    drive_link: "https://drive.google.com/file/d/1vYmHCPzFGtZoCxX-JwFublOtlCy0-HNT/view"
+    role: "citation_rehabilitation_hearing"
+
+  - filename: "A_Negru_25.04.2023.pdf"
+    sha256: "7fa67dff9a4e79bcdb959a4adc5fb4b68c85c679b9e036be59d81b834e4f9bd0"
+    size_bytes: 726181
+    location: "workspace:/home/workdir/artifacts/reabilitare/"
+    drive_file_id: "1vhYWtgGulM4PXHOPzKqb8gTT7V0M_uzC"
+    drive_link: "https://drive.google.com/file/d/1vhYWtgGulM4PXHOPzKqb8gTT7V0M_uzC/view"
+    role: "judge_negru_related_documents"
+
+pointers_to_master:
+  - note: "All physical copies in CASE-MACHERET-EVIDENCE-FINAL / CASE_MACHERET_ARCHIVE / other Drive folders shall be treated as active hash-links only. Do not keep binary duplicates."
+  - github_repo: "arhiv1973b/Reabilitare-Maceret-Oleinik-Negru-2026"
+  - drive_folder_open: "https://drive.google.com/drive/folders/1fC80a9w44gbP55fxWOx5l5DERhBFtn1S"
+
+historical_dead_hashes_layer:
+  - note: "Preserve the ~5000 'dead' hash list from previous overwrite incident as a separate historical layer. Never re-materialize or overwrite master binaries."
+
+next_actions:
+  - "Scan CASE-MACHERET-EVIDENCE-FINAL and CASE_MACHERET_ARCHIVE for content-hash matches and convert to pointers"
+  - "Add Markov-related documents (adoption 1977, death certificates, ZhSK-39 archive extract) as linked sub-nodes"
+  - "Prepare GitHub commit of this YAML + any new metadata"
+  - "Cross-link to property/confiscation branch (UDHR Art. 17)"
+
+integrity:
+  isolation_principle: "One binary master per unique content. All other locations become SHA-256 pointers."
+  eisenstein_wall: "Experts access via cloud links / GitHub without local binary download of masters where possible."
