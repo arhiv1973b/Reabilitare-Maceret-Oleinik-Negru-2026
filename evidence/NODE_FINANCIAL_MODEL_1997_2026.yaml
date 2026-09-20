@@ -1,0 +1,82 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Node: NODE_FINANCIAL_MODEL_1997_2026
+# Version: 1.0.0
+# Generated: 2026-09-20
+# Legal Foundation: UDHR Arts. 3, 5, 9, 17 | Jus Cogens | Restitutio in Integrum
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: NODE_FINANCIAL_MODEL_1997_2026
+version: "1.0.0"
+type: damage_calculation_node
+parent_nodes:
+  - NODE_CONTINUING_CONSEQUENCES_1997_2026
+  - NODE_TORTURE_AND_COVERUP_1997_1998
+  - SUBNODE_PROPERTY_RESTITUTION_1977_2026
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T13:41:00+03:00"
+status: provisional_estimates
+
+calculation_basis:
+  start_date: "1997-08-05"
+  current_date: "2026-09-20"
+  duration_months: 349
+  status: provisional_estimates
+
+components:
+  damnum_emergens:
+    property:
+      asset: "ZhSK-39 apt. 64 (Miron Costin 13/3)"
+      metric: "market_value + historical_inflation"
+      variables:
+        base_value: 75000
+        currency: "EUR"
+        status: provisional
+    note: "Includes lost property value. Additional direct costs (medical, legal) to be refined by expert appraisal."
+
+  lucrum_cessans:
+    lost_income:
+      subject: "Alexei Macheret"
+      source: "Firma Comex SRL (20% stake, IDNO 357716) + professional blockade due to non-rehabilitation"
+      metric: "base_monthly_rate * duration_months"
+      variables:
+        base_monthly_rate: 1500
+        currency: "EUR"
+        total_lost_base_income: 523500   # 1500 × 349
+        status: provisional
+    note: "Based on 20% formal ownership in active company COMEX SRL established 1993 + blocked professional opportunities. Full financial reports from Infodebit pending for refinement."
+
+  moral_damage:
+    jus_cogens_violation:
+      metric: "international_tribunal_standard (UN CAT / UDHR Art. 3, 5, 9)"
+      variables:
+        estimated_claim: 500000
+        currency: "EUR"
+        status: provisional
+      covers:
+        - "Torture of 18.08.1997 (judicially established in Sentință 1-568/98)"
+        - "Arbitrary detention from 05.08.1997"
+        - "Forced psychiatric measures against key witness Ivan Markov"
+        - "Family destruction and continuing stigma"
+        - "Systemic non-rehabilitation"
+
+summary:
+  damnum_emergens_eur: 75000
+  lucrum_cessans_eur: 523500
+  moral_damage_eur: 500000
+  total_base_claim_eur: 1098500
+  currency: "EUR"
+  status: provisional
+  note: "All figures are provisional placeholders. Subject to expert actuarial, real-estate and international-law quantification. Calculation runs from t0 = 1997-08-05."
+
+ti_ula_status:
+  state: financial_model_initialized_provisional
+  total_base_claim_eur: 1098500
+  next_step: await_expert_appraisal_refinement
+  linked_anchors:
+    - t0_initial_detention: "1997-08-05"
+    - t0_torture_incident: "1997-08-18"
+    - comex_stake: "20% FIRMA COMEX SRL (IDNO 357716)"
+
+integrity:
+  principle: "Provisional values locked for mathematical scaffolding. Any future expert revision will be recorded as a new versioned node with full audit trail."
+  eisenstein_wall: true
