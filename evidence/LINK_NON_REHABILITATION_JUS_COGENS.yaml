@@ -1,0 +1,60 @@
+# CASE-MACHERET-1997-2026
+# TI-ULA Linkage Node: LINK_NON_REHABILITATION_JUS_COGENS
+# Version: 1.0.0
+# Generated: 2026-09-20
+# Purpose: Hard-bind physical rehabilitation evidence to the Jus Cogens Root of Trust
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+
+id: LINK_NON_REHABILITATION_JUS_COGENS
+type: verification_link
+version: "1.0.0"
+case: CASE-MACHERET-1997-2026
+created: "2026-09-20T14:35:00+03:00"
+status: sealed
+
+source_node: NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+target_node: NODE_LEGAL_BASIS_JUS_COGENS
+
+legal_effect: |
+  All acts of denial of rehabilitation documented in the source node are hereby 
+  mapped to violations of peremptory norms. Pursuant to Article 53 of the Vienna 
+  Convention on the Law of Treaties (1969) and Articles 4, 8 and 53 of the 
+  Constitution of the Republic of Moldova, any judicial or prosecutorial decision 
+  that blocks effective remedy for a victim of torture is void ab initio and 
+  cannot produce legal effects under domestic law.
+
+verification_points:
+  - file_ref: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    sha256: "bd1c166eb48689abcd4e1bae58121aa3fed622b8e06842966b5660cd7d37d674"
+    size_bytes: 4413380
+    legal_mapping: "UDHR Art. 8 + Constitution RM Art. 53 (Initiation of effective remedy)"
+    role: "Primary applications for rehabilitation – formal demand for restoration of rights"
+    status: "verified_demand"
+
+  - file_ref: "CITAȚIE_reabilitare_Grigoras_26.04.2024.pdf"
+    sha256: "3cb1a4d3e553f2ea4180ac6fdfbf9ef1f276d2eb870c093a6c7a194504e2b080"
+    size_bytes: 150110
+    legal_mapping: "Procedural trace of the rehabilitation mechanism"
+    role: "Official citation / summons related to rehabilitation proceedings"
+    status: "verified_trace"
+
+  - file_ref: "A_Negru_25.04.2023.pdf"
+    sha256: "7fa67dff9a4e79bcdb959a4adc5fb4b68c85c679b9e036be59d81b834e4f9bd0"
+    size_bytes: 726181
+    legal_mapping: "VCLT Art. 53 (Acts conflicting with Jus Cogens are void) + UDHR Art. 8 + Const. RM Art. 53"
+    violation: "Denial of justice by Judge Alexandru Negru. Conscious subversion of Erga Omnes obligations and the absolute prohibition of leaving a torture victim without effective remedy."
+    status: "verified_violation"
+
+analytical_qualification:
+  - "The refusal to grant full rehabilitation after judicially established torture (Sentință 1-568/98) constitutes a continuing violation of UDHR Art. 5 and Art. 8."
+  - "Judge Negru’s acts are not mere procedural errors; they are acts that conflict with a peremptory norm and are therefore void under VCLT Art. 53."
+  - "Domestic res judicata or limitation arguments are inapplicable to claims arising from jus cogens violations."
+
+ti_ula_status:
+  state: legal_mapping_established
+  isolation: true
+  next_step: content_parsing_and_entity_extraction
+
+integrity:
+  principle: "This linkage node renders every subsequent national refusal to rehabilitate legally non-existent in the face of jus cogens."
+  eisenstein_wall: true
